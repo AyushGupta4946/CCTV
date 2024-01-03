@@ -541,7 +541,7 @@ body {
 
 /* resposive css */
 
-@media (min-width: 0px) and (max-width: 350px) {
+@media (min-width: 0px) and (max-width: 450px) {
   .header {
     padding: 1rem 1rem;
   }
@@ -611,6 +611,9 @@ body {
   }
   .about__image {
     width: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   .about__image img {
     width: 100%;
