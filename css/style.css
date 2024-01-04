@@ -64,7 +64,7 @@ body {
 
 /* hero section  */
 .hero {
-  background-image: url("assets/cam-bg.jpg");
+  background-image: url("../assets/cam-bg.jpg");
   width: 100%;
   height: calc(100vh - 65px);
   background-position: center center;
@@ -464,6 +464,77 @@ body {
 .banner2__content button:hover {
   background-color: whitesmoke;
 }
+/* contact section  */
+.contact {
+  padding: 3rem 4rem;
+  width: 100%;
+}
+
+.content__box {
+  /* max-width: 900px; */
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  /* margin: auto; */
+  box-shadow: 0px 0px 19px 5px rgba(0, 0, 0, 0.19);
+}
+
+.contact__left {
+  height: 100%;
+  background: url("../assets/ennio-dybeli-KDdNjUQwzSw-unsplash.jpg");
+  background-size: cover;
+  /* background-position: center; */
+}
+.contact__right {
+  padding: 25px 40px;
+}
+
+.contact__right h2 {
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.field {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  outline: none;
+  border: 2px solid rgba(0, 0, 0, 0);
+  background-color: rgba(230, 230, 230, 0.6);
+  font-size: 1.1rem;
+  margin-bottom: 22px;
+  transition: 0.3s;
+  border-radius: 8px;
+}
+.field:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.field:focus {
+  background-color: white;
+  border: 2px solid rgba(30, 85, 250, 0.47);
+}
+.area {
+  min-height: 150px;
+}
+
+.contact__btn {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  background-color: #1761f5;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+  color: white;
+  border-radius: 8px;
+  width: 200px;
+  padding: 10px 0;
+  font-size: 1.1rem;
+}
+.contact__btn:hover {
+  background-color: #1e58ce;
+}
 
 /* footer section  */
 .footer {
@@ -540,287 +611,3 @@ body {
 }
 
 /* resposive css */
-
-@media (min-width: 0px) and (max-width: 450px) {
-  .header {
-    padding: 1rem 1rem;
-  }
-  .navbar {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    top: 65px;
-    right: -100%;
-    text-align: center;
-    gap: 40px;
-    background-color: white;
-    width: 100%;
-    height: calc(100vh - 65px);
-    transition: 0.3s;
-  }
-  .hamburger {
-    display: block;
-    cursor: pointer;
-    font-size: 1.3rem;
-  }
-  .open {
-    right: 0;
-  }
-  .logo h1 {
-    font-size: 1rem;
-  }
-
-  /* hero section  */
-  .hero {
-    background-position: center center;
-    padding: 0 1rem;
-  }
-
-  .hero__content {
-    max-width: none;
-  }
-
-  .hero__content h1 {
-    font-size: 2.5rem;
-    line-height: 2.8rem;
-  }
-
-  .hero__content p {
-    font-size: 1.1rem;
-    color: rgb(32, 32, 32);
-  }
-  /* about section  */
-
-  .about {
-    padding: 1rem 1rem;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap: 40px;
-    height: auto;
-  }
-  .about__content {
-    gap: 20px;
-  }
-
-  .about__content h1 {
-    font-size: 1.6rem;
-    font-weight: 500;
-  }
-  .about__image {
-    width: 100%;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  .about__image img {
-    width: 100%;
-  }
-
-  .about__description__1 {
-    font-size: 1rem;
-    font-weight: 500;
-  }
-  .about__description__2 {
-    font-size: 0.9rem;
-  }
-
-  /* services section  */
-  .service {
-    padding: 1.5rem 1rem;
-  }
-
-  .section__header {
-    font-size: 1.6rem;
-  }
-  .service .section__content {
-    display: flex;
-    flex-direction: column;
-    padding: 2rem 0;
-    gap: 35px;
-  }
-
-  .section__content__card {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    justify-content: center;
-    width: fit-content;
-    flex: 1;
-  }
-
-  .section__content__card .card__image {
-    width: 100%;
-    background-size: cover;
-  }
-  .card__image img {
-    width: 100%;
-  }
-  .section__content__card h3 {
-    font-size: 1.4rem;
-    font-weight: 500;
-    margin-bottom: 7px;
-    transition: 0.3s;
-  }
-  .section__content__card h3:hover {
-    color: #1761f5;
-  }
-  .section__content__card p {
-    font-size: 0.9rem;
-    margin-bottom: 10px;
-    font-weight: 400;
-    color: gray;
-  }
-
-  /* company section  */
-  .company {
-    padding: 1.5rem 1rem;
-  }
-
-  .company__content {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-  }
-  .company__left {
-    flex: none;
-  }
-
-  .company__left p {
-    font-size: 1rem;
-  }
-  .company__right {
-    flex: none;
-  }
-  .company__right h1 {
-    font-size: 1.2rem;
-  }
-
-  .company__right__content {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    padding: 5px;
-  }
-
-  .company__right__content .icon img {
-    width: 40px;
-  }
-
-  .company__text {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-  }
-  .company__text h2 {
-    font-weight: 500;
-    font-size: 1rem;
-  }
-  .company__text p {
-    font-size: 0.8rem;
-  }
-
-  /* banner section  */
-
-  .banner {
-    height: 50vh;
-    padding: 10px;
-  }
-  .banner__content h1 {
-    font-size: 1.7rem;
-    margin-bottom: 20px;
-    padding: 0;
-  }
-  .banner__content p {
-    font-size: 1rem;
-    margin-bottom: 20px;
-  }
-
-  /* team section  */
-  .team {
-    padding: 1.5rem 1rem;
-  }
-
-  .team__content {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 1rem 0;
-  }
-
-  .team__card {
-    flex: none;
-    width: 100%;
-  }
-  /* banner section  */
-
-  .banner1__content {
-    max-width: none;
-  }
-  .banner1__content h1 {
-    font-size: 1.6rem;
-    padding: 20px 0;
-  }
-
-  /* product section  */
-  .product {
-    padding: 1.5rem 1rem;
-  }
-
-  .product__content {
-    display: flex;
-    flex-direction: column;
-    padding: 2rem 0;
-  }
-  /* banner2 section  */
-  .banner2 {
-    padding: 1rem 1rem;
-  }
-  .banner2 .banner2__content {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
-  }
-
-  .banner2__content h1 {
-    font-weight: 400;
-    font-size: 1.2rem;
-    text-align: center;
-  }
-
-  .banner2__content button {
-    font-size: 1rem;
-    padding: 8px 16px;
-  }
-
-  /* footer section  */
-  .footer {
-    padding: 1.5rem 1rem;
-  }
-
-  .footer__content {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-  }
-  .footer__logo {
-    flex: none;
-  }
-  .footer__links {
-    flex: none;
-  }
-
-  .icons__content {
-    display: flex;
-    gap: 15px;
-  }
-
-  .icons__content div {
-    border: 2px solid white;
-    padding: 10px;
-  }
-}
