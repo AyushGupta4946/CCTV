@@ -296,12 +296,12 @@
                 <div class="contact__left"></div>
                 <div class="contact__right">
                     <h2>Request A Query</h2>
-                    <input type="text" placeholder="Name" class="field" required>
-                    <input type="email" placeholder="Email" class="field" required>
-                    <input type="text" placeholder="Phone" class="field" required>
-                    <input type="text" placeholder="Subject" class="field" required>
-                    <textarea class="field area" placeholder="Message"></textarea>
-                    <input type="Submit" class="contact__btn" value="Submit">
+                    <input type="text" placeholder="Name" class="field" required id="name">
+                    <input type="email" placeholder="Email" class="field" required id="email">
+                    <input type="text" placeholder="Phone" class="field" required id="phone">
+                    <input type="text" placeholder="Subject" class="field" required id="subject">
+                    <textarea class="field area" placeholder="Message" id="message"></textarea>
+                    <input type="Submit" class="contact__btn" value="Submit" id="submit">
                 </div>
             </div>
 
@@ -361,7 +361,8 @@
 
     <!-- fontawesome cdn -->
     <script src="https://kit.fontawesome.com/7cc1870cb6.js" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
+    <script src="./script/script.js"></script>
+    <script type="module" src="./script/firebase.js"></script>
 </body>
 
 </html>
