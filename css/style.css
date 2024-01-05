@@ -517,6 +517,10 @@ body {
 .area {
   min-height: 150px;
 }
+.error-message {
+  color: red;
+  margin-top: 5px;
+}
 
 .contact__btn {
   width: 100%;

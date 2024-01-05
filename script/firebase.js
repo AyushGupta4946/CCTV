@@ -23,6 +23,14 @@ const db = getDatabase(app)
 
 document.getElementById("submit").addEventListener('click', (e) => {
     e.preventDefault();
+    var emailInput = document.getElementById("email").value;
+    var emailError = document.getElementById("emailError");
+    if (!isValidEmail(emailInput)) {
+        emailError.textContent = "Please enter a valid email address.";
+        return;
+    } else {
+        emailError.textContent = "";
+    }
     set(ref(db, 'user/' + document.getElementById("name").value), {
         name: document.getElementById("name").value,
         email: document.getElementById("email").value,
@@ -32,3 +40,11 @@ document.getElementById("submit").addEventListener('click', (e) => {
     });
     alert("Message sent successfully")
 })
+
+// Function to validate email format
+function isValidEmail(email) {
+    // Use a simple regex to check for a valid email format
+    var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+}
+
