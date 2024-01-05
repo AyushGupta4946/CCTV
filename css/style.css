@@ -83,7 +83,7 @@ body {
   overflow: hidden;
   display: flex;
   /* align-items: center; */
-  padding: 1rem 4rem;
+  padding: 2rem 4rem;
 }
 
 .hero__content {
@@ -103,12 +103,13 @@ body {
 .hero__content p {
   font-size: 1.15rem;
   color: rgb(224, 224, 224);
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-line-clamp: 2; /* number of lines to show */
-  -webkit-box-orient: vertical;
+  max-height: 90px; /* Adjust the height based on your needs */
+  transition: max-height 0.5s;
+}
+.hero__content p.expanded {
+  max-height: none;
 }
 
 .btn {
@@ -125,9 +126,8 @@ body {
   background-color: #124ec7;
 }
 .btn a {
-  text-decoration: none;
   color: white;
-  font-size: 1.1rem;
+  text-decoration: none;
 }
 
 /* about section  */

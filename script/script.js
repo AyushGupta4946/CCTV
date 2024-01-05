@@ -5,7 +5,7 @@ const menuBtnIcon = document.querySelector(".fa-solid")
 const themeBtn = document.querySelector(".theme__button")
 const submitBtn = document.querySelector("#submit")
 const body = document.body;
-const readMore = document.querySelector("#read__more")
+
 
 hamburger.addEventListener("click", (e) => {
     navbar.classList.toggle("open")
@@ -44,15 +44,17 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
-readMore.addEventListener('click', (e) => {
-    e.preventDefault()
-    var text = document.getElementById("read-more-text");
 
-    if (text.style.webkitLineClamp === "2") {
-        text.style.webkitLineClamp = "unset";
-        readMore.textContent = "Read Less";
+
+// read more functionality
+function toggleReadMore() {
+    var paragraph = document.querySelector('.hero__content p');
+    var btn = document.getElementById('read__more');
+
+    paragraph.classList.toggle('expanded');
+    if (paragraph.classList.contains('expanded')) {
+        btn.textContent = 'Read Less';
     } else {
-        text.style.webkitLineClamp = "2";
-        readMore.textContent = "Read More";
+        btn.textContent = 'Read More';
     }
-})
+}

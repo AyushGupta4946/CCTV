@@ -32,7 +32,7 @@
   /* hero section  */
   .hero {
     background-position: center center;
-    padding: 0 1rem;
+    padding: 4rem 1rem;
   }
 
   .hero__content {
@@ -40,13 +40,13 @@
   }
 
   .hero__content h1 {
-    font-size: 2.5rem;
+    font-size: 2.4rem;
     line-height: 2.8rem;
   }
 
   .hero__content p {
-    font-size: 1.1rem;
-    color: rgb(32, 32, 32);
+    font-size: 0.9rem;
+    color: rgb(224, 224, 224);
   }
   /* about section  */
 
