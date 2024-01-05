@@ -53,5 +53,5 @@ function showModal() {
     modal.style.display = "flex";
     setTimeout(function () {
         modal.style.display = "none";
-    }, 2000);
+    }, 3000);
 }
