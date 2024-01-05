@@ -38,7 +38,8 @@ document.getElementById("submit").addEventListener('click', (e) => {
         subject: document.getElementById("subject").value,
         message: document.getElementById("message").value,
     });
-    alert("Message sent successfully")
+    showModal()
+
 })
 
 // Function to validate email format
@@ -47,4 +48,10 @@ function isValidEmail(email) {
     var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return emailRegex.test(email);
 }
-
+function showModal() {
+    var modal = document.getElementById("myModal");
+    modal.style.display = "flex";
+    setTimeout(function () {
+        modal.style.display = "none";
+    }, 2000);
+}

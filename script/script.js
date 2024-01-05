@@ -3,6 +3,7 @@ const navbar = document.querySelector(".navbar")
 const link = document.querySelector(".link")
 const menuBtnIcon = document.querySelector(".fa-solid")
 const themeBtn = document.querySelector(".theme__button")
+const submitBtn = document.querySelector("#submit")
 
 hamburger.addEventListener("click", (e) => {
     navbar.classList.toggle("open")
@@ -31,3 +32,11 @@ themeBtn.addEventListener('click', (e) => {
     // Update the button text
     // document.querySelector('button').textContent = buttonText;
 })
+
+// submitBtn.addEventListener("click", function showModal() {
+//     var modal = document.getElementById("myModal");
+//     modal.style.display = "flex";
+//     setTimeout(function () {
+//         modal.style.display = "none";
+//     }, 2000);
+// })
