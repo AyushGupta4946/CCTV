@@ -4,6 +4,8 @@ const link = document.querySelector(".link")
 const menuBtnIcon = document.querySelector(".fa-solid")
 const themeBtn = document.querySelector(".theme__button")
 const submitBtn = document.querySelector("#submit")
+const body = document.body;
+const readMore = document.querySelector("#read__more")
 
 hamburger.addEventListener("click", (e) => {
     navbar.classList.toggle("open")
@@ -17,26 +19,40 @@ navbar.addEventListener("click", (e) => {
     menuBtnIcon.setAttribute("class", "fa-solid fa-bars")
 })
 
-// theme toggler
 
-themeBtn.addEventListener('click', (e) => {
-    const body = document.body;
 
+function toggleTheme() {
     // Toggle the 'dark-mode' class on the body
     body.classList.toggle('dark-mode');
 
-    // Check if 'dark-mode' is applied, and set the appropriate text on the button
+
     const isDarkMode = body.classList.contains('dark-mode');
-    const buttonText = isDarkMode ? 'Switch to Light Mode' : 'Switch to Dark Mode';
 
-    // Update the button text
-    // document.querySelector('button').textContent = buttonText;
+
+    // Save the theme preference to local storage
+    localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
+}
+
+// Event listener for theme button click
+themeBtn.addEventListener('click', toggleTheme);
+
+// Checking the local storage for theme preference on page load
+document.addEventListener('DOMContentLoaded', () => {
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'dark') {
+        body.classList.add('dark-mode');
+    }
+});
+
+readMore.addEventListener('click', (e) => {
+    e.preventDefault()
+    var text = document.getElementById("read-more-text");
+
+    if (text.style.webkitLineClamp === "2") {
+        text.style.webkitLineClamp = "unset";
+        readMore.textContent = "Read Less";
+    } else {
+        text.style.webkitLineClamp = "2";
+        readMore.textContent = "Read More";
+    }
 })
-
-// submitBtn.addEventListener("click", function showModal() {
-//     var modal = document.getElementById("myModal");
-//     modal.style.display = "flex";
-//     setTimeout(function () {
-//         modal.style.display = "none";
-//     }, 2000);
-// })
