@@ -52,6 +52,18 @@ body {
   padding: 1rem 4rem;
   position: sticky;
 }
+
+.header .logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+}
+.logo img {
+  width: 100%;
+  mix-blend-mode: color-burn;
+}
+
 .hamburger {
   display: none;
 }
