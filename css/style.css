@@ -58,6 +58,7 @@ body {
   align-items: center;
   justify-content: center;
   width: 125px;
+  /* padding-top: 30px; */
 }
 .logo img {
   width: 100%;
@@ -126,16 +127,16 @@ body {
 
 .btn {
   padding: 10px 20px;
-  background-color: #1761f5;
+  background: linear-gradient(to left, #ffa500, #ffdb4f);
   border: none;
   outline: none;
   border-radius: 30px;
   cursor: pointer;
-  transition: 0.3s;
+  transition: 0.8s ease;
   color: white;
 }
 .btn:hover {
-  background-color: #124ec7;
+  background-color: #ffa500;
 }
 .btn a {
   color: white;
@@ -188,7 +189,7 @@ body {
   width: fit-content;
 }
 .section__subheader {
-  border-bottom: 2px solid #124ec7;
+  border-bottom: 2px solid #ffa500;
 }
 
 .section__header {
@@ -225,7 +226,7 @@ body {
   transition: 0.3s;
 }
 .section__content__card h3:hover {
-  color: #1761f5;
+  color: #ffa500;
 }
 .section__content__card p {
   font-size: 0.9rem;
@@ -458,7 +459,7 @@ body {
 
 /* banner2 section  */
 .banner2 {
-  background-color: #2266ee;
+  background-color: #ffa500;
   height: 30vh;
   width: 100%;
   display: flex;
@@ -483,7 +484,7 @@ body {
   font-size: 1.5rem;
   padding: 10px 20px;
   background-color: white;
-  color: #2266ee;
+  color: #ffa500;
   border: none;
   outline: none;
   cursor: pointer;
@@ -554,7 +555,7 @@ body {
 .contact__btn {
   width: 100%;
   padding: 0.5rem 1rem;
-  background-color: #1761f5;
+  background: linear-gradient(to left, #ffa500, #ffdb4f);
   outline: none;
   border: none;
   cursor: pointer;
@@ -566,7 +567,7 @@ body {
   font-size: 1.1rem;
 }
 .contact__btn:hover {
-  background-color: #1e58ce;
+  background: linear-gradient(to right, #ffa500, #ffdb4f);
 }
 
 /* footer section  */
@@ -647,7 +648,11 @@ body {
 .icons__content div i {
   font-size: 1.2rem;
 }
-
+.sub__footer a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 0.8rem;
+}
 /* moda section  */
 .modal {
   display: none;
@@ -667,7 +672,7 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-color: cyan;
+  background-color: gray;
   padding: 40px;
   border-radius: 8px;
   text-align: center;

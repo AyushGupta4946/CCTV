@@ -21,13 +21,13 @@
             </div>
 
             <ul class="navbar">
-                <li class="link"><a href="#home">Home</a></li>
-                <li class="link"><a href="#services">Services</a></li>
-                <li class="link"><a href="#about">About</a></li>
-                <li class="link"><a href="#team">Team</a></li>
-                <li class="link"><a href="#product">Products</a></li>
+                <li class="link" title="Home"><a href="#home">Home</a></li>
+                <li class="link" title="Services"><a href="#services">Services</a></li>
+                <li class="link" title="About"><a href="#about">About</a></li>
+                <li class="link" title="Team"><a href="#team">Team</a></li>
+                <li class="link" title="Products"><a href="#product">Products</a></li>
 
-                <li class="link"><a href="#contact">Contact</a></li>
+                <li class="link" title="Contact"><a href="#contact">Contact</a></li>
                 <li class="link theme__button"><i class="fa-solid fa-sun"></i></li>
             </ul>
 
@@ -293,7 +293,8 @@
             </div>
             <div class="content__box">
                 <div class="contact__left"></div>
-                <div class="contact__right">
+                <form action="" class="contact__right" onsubmit="sendEmail()">
+
                     <h2>Request a Quote</h2>
                     <input type="text" placeholder="Name" class="field" required id="name">
                     <span id="emailError" class="error-message"></span>
@@ -301,12 +302,12 @@
                     <span id="emailError" class="error-message"></span>
                     <input type="number" placeholder="Phone" class="field" required id="phone">
                     <span id="emailError" class="error-message"></span>
-                    <input type="text" placeholder="Subject" class="field" required id="subject">
-                    <span id="emailError" class="error-message"></span>
+
                     <textarea class="field area" placeholder="Message" id="message"></textarea>
                     <span id="emailError" class="error-message"></span>
                     <input type="Submit" class="contact__btn" value="Submit" id="submit">
-                </div>
+
+                </form>
             </div>
 
         </section>
@@ -351,6 +352,9 @@
                     </div>
                 </div>
                 <p>Copyright © 2024 All Rights Reserved</p>
+                <span class="sub__footer"><a href=" https://apexware.in/" target="_blank">Designed and developed by
+                        Apexware consultancy
+                        LLP</a></span>
             </div>
             <a href="https://www.hitwebcounter.com" target="_blank" class="counter">
                 <img src="https://hitwebcounter.com/counter/counter.php?page=10613953&style=0011&nbdigits=5&type=ip&initCount=0"
@@ -371,8 +375,15 @@
 
     <!-- fontawesome cdn -->
     <script src="https://kit.fontawesome.com/7cc1870cb6.js" crossorigin="anonymous"></script>
+    <!-- smtp cdn -->
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+    <!-- script file  -->
     <script defer src="./script/script.js"></script>
+    <!-- firebase scipt  -->
     <script type="module" src="./script/firebase.js"></script>
+    <!-- script for smtp  -->
+    <script src="./script/smtp.js"></script>
 </body>
 
 </html>
