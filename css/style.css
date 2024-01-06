@@ -82,7 +82,11 @@ body {
   transition: 0.3s;
 }
 .navbar li a:hover {
-  color: darkgray;
+  color: #ffa500;
+}
+.theme__button {
+  color: #ffa500;
+  cursor: pointer;
 }
 
 /* hero section  */
@@ -592,6 +596,9 @@ body {
 }
 .footer__logo {
   flex: 2;
+}
+.footer__logo img {
+  width: 140px;
 }
 .footer__logo p {
   font-weight: 300;

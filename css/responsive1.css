@@ -298,4 +298,15 @@
     border: 2px solid white;
     padding: 10px;
   }
+  .copyright {
+    text-align: center;
+  }
+  .sub__footer {
+    text-align: center;
+  }
+  .sub__footer a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 0.8rem;
+  }
 }
