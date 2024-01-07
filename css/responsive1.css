@@ -8,12 +8,12 @@
     justify-content: center;
     align-items: center;
     position: fixed;
-    top: 86px;
+    top: 85px;
     right: -100%;
     text-align: center;
     gap: 40px;
     width: 100%;
-    height: calc(100vh - 86px);
+    height: calc(100vh - 85px);
     transition: 0.3s;
   }
 

@@ -50,8 +50,6 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 1rem 4rem;
-  position: sticky;
-  background-color: inherit;
 }
 
 .header .logo {
@@ -63,7 +61,6 @@ body {
 }
 .logo img {
   width: 100%;
-  mix-blend-mode: color-burn;
 }
 
 .hamburger {
@@ -73,7 +70,6 @@ body {
   display: flex;
   gap: 40px;
   list-style: none;
-  background-color: white;
 }
 
 body.dark-mode .navbar {
