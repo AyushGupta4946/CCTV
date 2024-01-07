@@ -8,15 +8,15 @@
     justify-content: center;
     align-items: center;
     position: fixed;
-    top: 65px;
+    top: 86px;
     right: -100%;
     text-align: center;
     gap: 40px;
-    background-color: white;
     width: 100%;
-    height: calc(100vh - 65px);
+    height: calc(100vh - 86px);
     transition: 0.3s;
   }
+
   .hamburger {
     display: block;
     cursor: pointer;

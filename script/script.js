@@ -7,6 +7,7 @@ const submitBtn = document.querySelector("#submit")
 const body = document.body;
 
 
+
 hamburger.addEventListener("click", (e) => {
     navbar.classList.toggle("open")
 
@@ -31,6 +32,7 @@ function toggleTheme() {
 
     // Save the theme preference to local storage
     localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
+
 }
 
 // Event listener for theme button click
@@ -41,6 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const savedTheme = localStorage.getItem('theme');
     if (savedTheme === 'dark') {
         body.classList.add('dark-mode');
+
     }
 });
 

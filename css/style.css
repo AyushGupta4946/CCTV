@@ -51,6 +51,7 @@ body {
   justify-content: space-between;
   padding: 1rem 4rem;
   position: sticky;
+  background-color: inherit;
 }
 
 .header .logo {
@@ -72,6 +73,11 @@ body {
   display: flex;
   gap: 40px;
   list-style: none;
+  background-color: white;
+}
+
+body.dark-mode .navbar {
+  background-color: #070a13;
 }
 
 .navbar li a {
