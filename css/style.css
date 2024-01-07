@@ -99,7 +99,7 @@ body.dark-mode .navbar {
 .hero {
   background-image: url("../assets/cam-bg.jpg");
   width: 100%;
-  height: calc(100vh - 65px);
+  height: calc(100vh - 85px);
   background-position: center center;
   background-size: auto;
   background-repeat: no-repeat;
