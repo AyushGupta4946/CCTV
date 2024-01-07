@@ -25,8 +25,8 @@
   .open {
     right: 0;
   }
-  .logo h1 {
-    font-size: 1.2rem;
+  .logo img {
+    width: 110px;
   }
 
   /* hero section  */
