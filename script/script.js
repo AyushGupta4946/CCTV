@@ -8,6 +8,9 @@ const body = document.body;
 
 
 
+
+
+
 hamburger.addEventListener("click", (e) => {
     navbar.classList.toggle("open")
 
@@ -61,3 +64,4 @@ function toggleReadMore() {
         btn.textContent = 'Read More';
     }
 }
+

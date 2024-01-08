@@ -1,3 +1,17 @@
+const userName = document.getElementById("name")
+const userEmail = document.getElementById("email")
+const userPhone = document.getElementById("phone")
+const userMessage = document.getElementById("message")
+
+const messageBody =
+    "Name: " + userName.value + "\n" +
+    "Email: " + userEmail.value + "\n" +
+    "Phone Number: " + userPhone.value + "\n" +
+    "Message: " + userMessage.value;
+
+
+
+
 
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
@@ -32,11 +46,12 @@ document.getElementById("submit").addEventListener('click', (e) => {
         emailError.textContent = "";
     }
     set(ref(db, 'user/' + document.getElementById("name").value), {
-        name: document.getElementById("name").value,
-        email: document.getElementById("email").value,
-        phone: document.getElementById("phone").value,
-        message: document.getElementById("message").value,
+        name: userName.value,
+        email: userEmail.value,
+        phone: userPhone.value,
+        message: userMessage.value,
     });
+    sendEmail()
     showModal()
 
 })
@@ -54,3 +69,20 @@ function showModal() {
         modal.style.display = "none";
     }, 3000);
 }
+
+
+// email send 
+function sendEmail() {
+
+    Email.send({
+        SecureToken: "6fbfd450-379a-4714-95b3-b2388bdde766",
+        To: 'ayush0409gupta@gmail.com',
+        From: "ayush0409gupta@gmail.com",
+        Subject: "This is the subject",
+        Body: "Name: " + userName.value + "<br/>" +
+            "Email: " + userEmail.value + "<br/>" +
+            "Phone Number: " + userPhone.value + "<br/>" +
+            "Message: " + userMessage.value
+    })
+}
+
